@@ -1,0 +1,19 @@
+{
+  "name": "ghost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badra25ml/Ghost.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/badra25ml/Ghost/issues"
+  },
+  "homepage": "https://github.com/badra25ml/Ghost#readme"
+}
