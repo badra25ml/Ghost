@@ -1,0 +1,26 @@
+{
+  "name": "ghost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badra25ml/Ghost.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/badra25ml/Ghost/issues"
+  },
+  "homepage": "https://github.com/badra25ml/Ghost#readme",
+  "dependencies": {
+    "express": "^4.13.0",
+    "marked": "^0.3.3"
+  }
+}
