@@ -7,23 +7,19 @@
       app.controller("markController", init);
 
       function init ($scope, $http, $sce){
-        $scope.findText = function(urlValue){
+        $scope.findText = function(data){
           var encode = encodeURIComponent($scope.inputArea);
           $http.get("/markdown/" + encode)
           .success(function(){
-            $scope.preview = $sce.trusAsHtml(urlValue);
+            $scope.preview = $sce.trustAsHtml(data);
           })
         }
       }
     </script>
-
-
      <link rel="stylesheet" href="css/main.css">
-
   </head>
   <body ng-app="mark" ng-controller="markController">
-    <textarea ng-model="inputArea" ng-keyup="findText()"></textarea>
-    <div ng-bind-html=""></div>
-    <button ng-model="clickHere">Submit</button>
+    <textarea rows="5" ng-model="inputArea" ng-keyup="findText()"></textarea>
+    <div ng-bind-html="preview"></div>
   </body>
 </html>
