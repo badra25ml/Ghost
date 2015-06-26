@@ -13,7 +13,10 @@ function responseHandler(req, res) {
   } else if(req.url.match("/markdown/")) {
     var urlValue = "";
     urlValue = decodeURI(req.url.match(/markdown\/(.*)/)[1]);
-    res.write( urlValue);
-    console.log(marked(urlValue))
+    res.write(urlValue);
+    //console.log(marked(urlValue))
   }
+ else {
+  res.end()
+}
 }
